@@ -38,13 +38,7 @@ body {
     
 }
 /* ==========================================VIDEO=================================*/
-/*.video-section{
-    position: relative;
-    background: #000;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
+
 
 .video-bg {
     position: absolute;
@@ -54,8 +48,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.4;
+    opacity: 1;
     aspect-ratio: 7/3;
+    filter: brightness(10%);
 }
 
 .video-bg::webkit-media-controls {
@@ -67,7 +62,7 @@ body {
     justify-content: center;
     align-content: center;
     text-align: center;
-}*/
+}
 
 /*===========================VIDEO==============================================================*/
 
@@ -157,6 +152,9 @@ section {
     width: 280px;
     margin-top: 2rem;
     margin-bottom: 6rem;
+    position: relative;
+    right: -180px;
+    
 }
 
 .social-media{
@@ -164,6 +162,9 @@ section {
     justify-content: space-between;
     width: 220px;
     height: 45px;
+    position: relative;
+    top: 220px;
+    right: -685px;
 }
 
 .social-media a {
@@ -209,30 +210,38 @@ section {
     z-index: 1;
 }
 .hero-info h3 {
-    color: var(--font-color);
+    color: #fff;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.1rem;
-
+    position: relative;
+    top: -220px;
+    left: 485px;
+    font-size: 50px;
 }
 
 .hero-info h1 {
     font-size: 3.5rem;
+    color: #fff;
+    position: relative;
+    top: -250px;
+    left: 570px;
 }
 
 .text-animate{
     width: 22.8rem;
     position: relative;
-
+    top: -220px;
+    right: -620px;
 }
 
 
 .text-animate h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 30px;
+    /* font-weight: 700; */
+    /* margin-bottom: 1rem; */
     color: transparent;
-    -webkit-text-stroke: 0.1vw #770753;
+    -webkit-text-stroke: 0.1vw #ffffff , #fff;
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -241,11 +250,15 @@ section {
     letter-spacing: 2px;
     animation: moveText 3s linear infinite;
     animation-delay: 2s;
+    
+    
 }
 .hero-info p {
-    font-size: .9rem;
-    color: var(--font-color);
+    font-size: 1rem;
+    color: #fff;
     line-height: 1.5rem;
+    position: absolute;
+    right: 250px;
 }
 
 
@@ -262,7 +275,8 @@ section {
 
 .img-hero{
     position: relative;
-    right: -350px;
+    right: -120px;
+    
     
 }
 
@@ -322,6 +336,7 @@ section {
     border-radius: 50%;
     box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
     animation: rotateText 30s linear infinite;
+    
 }
 
 
